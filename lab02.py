@@ -16,12 +16,14 @@ def seconds_to_hms(total_seconds):
 
 def admission_price(age):
     # TODO (Part 2): return the ticket price (a number) for someone of this age
-    if age < 3:
+    if age < 5:
         return 0
-    elif age < 12:
+    elif age < 13:
         return 8
+    elif age < 65:
+        return 15
     else:
-        return 12
+        return 10
 
 def sum_multiples(limit):
     # TODO (Part 3): return the sum of every whole number below `limit`
@@ -46,10 +48,10 @@ def total_of_positives(numbers):
 def main():
     # Optional scratch space - use this to try your functions with sample values.
     # Uncomment a line and run `python lab02.py` to see the result.
-    print(seconds_to_hms(3661))            # 1:01:01
-    print(admission_price(10))             # 8
-    print(sum_multiples(10))               # 23
-    print(total_of_positives([1, -2, 3]))  # 4
+    print(seconds_to_hms(7325))            # 1:01:01
+    print(admission_price(3))             # 8
+    print(sum_multiples(20))              # 
+    print(total_of_positives([10,23]))  #33
     pass
 
 
